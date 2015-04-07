@@ -1,0 +1,43 @@
+
+$background-color:  #bb47b3;
+
+$title-color:       rgba(255, 255, 255, 0.7);
+$updatedat-color:   rgba(0, 0, 0, 0.4);
+$error-color:       rgba(255,0,0, 0.5);
+
+$text-font:          Helvetica-Neue, Helvetica, sans-serif;
+
+.widget-bubblechart {
+
+  background-color: $background-color;
+
+  .title {
+      color: $title-color;
+      position: absolute;
+      top: 10px;
+      left: 60px;
+      right: 60px;
+  }
+
+  
+  g ellipse {
+      stroke: black;
+      stroke-width: 0.5;
+        border: 5px solid black;
+        border-radius: 10px;
+        border-style: inset;
+
+  }
+      
+  g text {
+      font-family: $text-font;
+      font-size: 18px;
+      font-weight: 400;
+  }
+
+  .updated-at {
+    color: $updatedat-color;
+    left: 60px;
+    right: 60px;
+  }
+}
